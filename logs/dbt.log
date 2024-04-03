@@ -1,0 +1,44 @@
+[0m16:33:38.370567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53cc7e7eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53cad880d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53cad88100>]}
+
+
+============================== 16:33:38.374440 | 9c0184f2-3ec3-4013-bf89-9fd8088da4d2 ==============================
+[0m16:33:38.374440 [info ] [MainThread]: Running with dbt=1.7.11
+[0m16:33:38.375313 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/tran.nhat.minhb@sun-asterisk.com/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbtlearn', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:33:38.376889 [debug] [MainThread]: Starter project path: /home/tran.nhat.minhb@sun-asterisk.com/.local/lib/python3.8/site-packages/dbt/include/starter_project
+[0m16:33:38.382420 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:33:38.383264 [info ] [MainThread]: Setting up your profile.
+[0m16:36:11.982395 [info ] [MainThread]: Profile dbtlearn written to /home/tran.nhat.minhb@sun-asterisk.com/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:36:11.987527 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 153.62889, "process_user_time": 3.075151, "process_kernel_time": 0.221111, "process_mem_max_rss": "141268", "process_in_blocks": "102480", "process_out_blocks": "80"}
+[0m16:36:11.991219 [debug] [MainThread]: Command `dbt init` succeeded at 16:36:11.990153 after 153.63 seconds
+[0m16:36:11.992573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53cc7e7eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53cf907070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53cad882e0>]}
+[0m16:36:11.994420 [debug] [MainThread]: Flushing usage events
+[0m10:38:15.708221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8937d2b990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8937d2bf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8937d2bb10>]}
+
+
+============================== 10:38:15.711853 | a219abd2-cd39-4574-9a91-3bc8d112b6dc ==============================
+[0m10:38:15.711853 [info ] [MainThread]: Running with dbt=1.7.11
+[0m10:38:15.712811 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/tran.nhat.minhb@sun-asterisk.com/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --full-refresh', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:38:15.713687 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/tran.nhat.minhb@sun-asterisk.com/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:38:15.714842 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.07915912, "process_user_time": 2.227573, "process_kernel_time": 0.083833, "process_mem_max_rss": "93740", "process_in_blocks": "24", "process_out_blocks": "16", "command_success": false}
+[0m10:38:15.715682 [debug] [MainThread]: Command `dbt run` failed at 10:38:15.715430 after 0.08 seconds
+[0m10:38:15.716345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8937d3a910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8937ccc950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f893bd10e90>]}
+[0m10:38:15.717016 [debug] [MainThread]: Flushing usage events
